@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sails Exclusive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SH1-AS-l6A">
+                                <rect key="frame" x="20" y="20" width="280" height="91"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="49"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-63-T9c">
+                                <rect key="frame" x="20" y="217" width="280" height="105"/>
+                                <color key="backgroundColor" red="0.062745101749897003" green="0.46666669845581055" blue="0.9647059440612793" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="40"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="gas"/>
+                                <connections>
+                                    <action selector="gasButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TYl-B0-GgA"/>
+                                    <segue destination="3TM-C9-45m" kind="modal" modalTransitionStyle="flipHorizontal" id="TBx-Ju-xh0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gna-r4-HlF">
+                                <rect key="frame" x="20" y="104" width="280" height="105"/>
+                                <color key="backgroundColor" red="1" green="0.17254902420000001" blue="0.33333334329999997" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="40"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="food"/>
+                                <connections>
+                                    <action selector="foodButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lNc-3r-lpQ"/>
+                                    <segue destination="g2Y-LY-duI" kind="modal" modalTransitionStyle="flipHorizontal" id="Xrp-LP-2bb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtz-fN-91y">
+                                <rect key="frame" x="20" y="330" width="280" height="105"/>
+                                <color key="backgroundColor" red="0.34509804844856262" green="0.33725491166114807" blue="0.83921575546264648" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="40"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="docks">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dockButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="msW-cb-o76"/>
+                                    <segue destination="bK6-gb-gSE" kind="modal" modalTransitionStyle="flipHorizontal" id="6tz-Y8-NBa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1z-Km-oRg">
+                                <rect key="frame" x="20" y="443" width="280" height="105"/>
+                                <color key="backgroundColor" red="1" green="0.58431375026702881" blue="0.20784315466880798" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="40"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="tour">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dockButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vfu-O3-ep2"/>
+                                    <segue destination="XtG-Pi-p3P" kind="modal" modalTransitionStyle="flipHorizontal" id="iwW-yf-WkG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862751245498657" green="0.96862751245498657" blue="0.96862751245498657" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="dockButton" destination="Mtz-fN-91y" id="Vud-lQ-NGe"/>
+                        <outlet property="foodButton" destination="Gna-r4-HlF" id="IyD-bi-2HT"/>
+                        <outlet property="gasButton" destination="vGc-63-T9c" id="psH-UJ-ua2"/>
+                        <outlet property="sitesButton" destination="x1z-Km-oRg" id="bO0-ek-JBM"/>
+                        <outlet property="titleLabel" destination="SH1-AS-l6A" id="tAu-n7-6CM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8392" y="-438"/>
+        </scene>
+        <!--tour-->
+        <scene sceneID="sQh-gb-DaP">
+            <objects>
+                <viewController id="Hgf-jL-rcA" customClass="tourViewControl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o3v-AE-fXs"/>
+                        <viewControllerLayoutGuide type="bottom" id="T66-tK-2fe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xx2-IJ-DOs">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="tour" id="skc-Ee-T9A">
+                        <barButtonItem key="leftBarButtonItem" title="main" id="O3b-uH-6xV">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="coverVertical" id="aLR-Ki-D0a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Esg-Y5-Hds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7478" y="264"/>
+        </scene>
+        <!--food-->
+        <scene sceneID="syx-SQ-Hin">
+            <objects>
+                <tableViewController id="LGF-I2-rve" customClass="myTableView" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="74c-zb-Z0n">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lKn-b0-wTJ">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lKn-b0-wTJ" id="eLa-p5-aFg">
+                                    <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LGF-I2-rve" id="bCP-cc-dUA"/>
+                            <outlet property="delegate" destination="LGF-I2-rve" id="E9G-YE-djK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="food" id="nfW-yb-qoY">
+                        <barButtonItem key="leftBarButtonItem" title="main" id="mfm-Pk-3oV">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="modal" id="cdF-fi-VVy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgA-iL-DOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6537" y="-789"/>
+        </scene>
+        <!--Food Nav Control-->
+        <scene sceneID="5M3-PN-KLK">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="g2Y-LY-duI" customClass="foodNavControl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="5TO-T4-RdX">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LGF-I2-rve" kind="relationship" relationship="rootViewController" id="q3g-7h-09b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CLF-A6-M2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6957" y="-796"/>
+        </scene>
+        <!--gas-->
+        <scene sceneID="BgL-UP-niQ">
+            <objects>
+                <tableViewController id="S5L-yl-KP3" customClass="gasTableView" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="j7g-1a-kl9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="VWh-fV-Ol4">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VWh-fV-Ol4" id="BaD-S7-6Uc">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="S5L-yl-KP3" id="Crp-Bu-Tiq"/>
+                            <outlet property="delegate" destination="S5L-yl-KP3" id="lAN-lo-7Zl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="gas" id="BWB-VD-ELU">
+                        <barButtonItem key="leftBarButtonItem" title="main" id="lX5-Og-Fzp">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="coverVertical" id="Ig2-Ho-fQ2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rBa-XH-uew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6549" y="-90"/>
+        </scene>
+        <!--docks-->
+        <scene sceneID="R0B-nF-VkT">
+            <objects>
+                <tableViewController id="eDc-HW-Pwc" customClass="dockTableView" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fcx-6j-OZJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lzA-6U-jdg">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lzA-6U-jdg" id="ftI-Xf-eus">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="eDc-HW-Pwc" id="0ZG-sB-hxb"/>
+                            <outlet property="delegate" destination="eDc-HW-Pwc" id="PW7-6W-mgs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="docks" id="yLW-cj-6Rf">
+                        <barButtonItem key="leftBarButtonItem" title="main" id="NMU-6Z-OH5">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="coverVertical" id="btG-qs-dxe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Vr-aa-P3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7398" y="-1197"/>
+        </scene>
+        <!--Gas Nav Control-->
+        <scene sceneID="wgG-bf-2fU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3TM-C9-45m" customClass="gasNavControl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="rso-0h-HwE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S5L-yl-KP3" kind="relationship" relationship="rootViewController" id="Lee-Iw-jIg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9f-Yo-G0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6957" y="-81"/>
+        </scene>
+        <!--Dock Nav Control-->
+        <scene sceneID="vzm-Qj-CZd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bK6-gb-gSE" customClass="dockNavControl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="eKw-NV-0FV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eDc-HW-Pwc" kind="relationship" relationship="rootViewController" id="UfO-Eu-YW4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APt-hB-IpR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7816" y="-1197"/>
+        </scene>
+        <!--Tour Nav Control-->
+        <scene sceneID="PqX-SQ-Cvf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XtG-Pi-p3P" customClass="tourNavControl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="cjh-Or-r6u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Hgf-jL-rcA" kind="relationship" relationship="rootViewController" id="e2h-tF-Y9c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4d-TH-9Bv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7872" y="258"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="btG-qs-dxe"/>
+    </inferredMetricsTieBreakers>
+</document>
